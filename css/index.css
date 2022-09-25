@@ -1,0 +1,90 @@
+/* 
+- James N // Radded's Portfolio site -->
+- index.css
+- Styling for the homepage of my portfolio!
+*/
+
+
+/** FONTS **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+
+
+/** HERO-HOOK (I like computers a little too much.) **/
+#hero-hook img {
+    filter: brightness(50%);
+}
+
+#hero-hook h1 {
+    top: 10%;
+    width: 100%;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-size: 4vmin;
+}
+
+#hero-hook a {
+    text-decoration: none;
+    font-family: monospace;
+    color: #333333;
+    position: absolute;
+    top: 93%;
+    left: 1%;
+    font-size: 3vmin;
+}
+
+
+/** HERO INTRO IMG **/
+#hero-intro-img h1 {
+    top: 10%;
+    left: 50%;
+    width: 100%;
+    mix-blend-mode: difference;
+    font-size: 6vmin;
+}
+
+#hero-intro-img {
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(135,135,255,1) 0%, rgba(135,220,200,1) 100%);
+}
+
+
+/** HERO INTRO TEXT **/
+#hero-intro-textblock {
+    padding: 30px;
+    background: linear-gradient(180deg, #444480 20%, rgb(11, 25, 70) 100%);
+}
+
+#hero-intro-textblock h1 {
+    font-size: 24px;
+    color: #cdcdcd;
+}
+
+#hero-intro-textblock b {
+    color: #ffffff;
+}
+
+#hero-intro-textblock h1 p {
+    font-size: 10px;
+}
+
+
+/** WORDART **/
+.wordart {
+    background: linear-gradient(180deg, rgba(135,135,255,1) 0%, rgba(135,220,200,1) 100%);
+    padding: 10px;
+}
+
+.wordart-word {
+    font-size: 3vmin;
+    display: inline-block;
+    margin: 10px;
+    line-height: 3px;
+    color: white;
+    opacity: 25%;
+    font-family: monospace;
+
+    /* from https://www.w3schools.com/cssref/css3_pr_text-justify.asp */
+    text-align: justify;
+    text-justify: inter-ideograph;
+}

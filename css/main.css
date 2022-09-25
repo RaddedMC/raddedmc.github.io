@@ -1,0 +1,178 @@
+/* 
+- James N // Radded's Portfolio site -->
+- main.css
+- the template file that will be used for site-wide navigation
+*/
+
+
+/** FONTS **/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Poppins&display=swap');
+
+
+/** MAIN STUFF **/
+header {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    background-color: #001f24;
+}
+
+.nav {
+    background-color: #001f24;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+/** HEADER TEXT AND LOGO **/
+#nav-title-container {
+    width: 80%;
+    background-color: #001f24;
+    margin: auto; /* All of the reddit memes about centering a div have been solved */
+    margin: 10px auto 10px auto;
+    height: 12vmin;
+}
+
+#nav-title {
+    font-family: 'Kanit', sans-serif;
+    float: right;
+    margin: 0;
+    font-size: 7vmin;
+}
+
+#nav-img {
+    margin-top: 5px;
+    float: left;
+    height: 11vmin;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+
+/** LINKS **/
+#nav-links-container {
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+#nav-links-container a {
+    padding: 5px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vmin;
+}
+
+#nav-links-container .active{
+    background-color: #0C91E8;
+}
+
+
+/** FOOTER **/
+footer {
+    padding: 30px;
+    background-color: #001f24;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 10vmin;
+    height: auto;
+    margin: 10px 30px 10px 30px;
+}
+
+#discord-icon {
+    border-radius: 100%;
+}
+
+#youtube-icon {
+    margin-bottom: 20px;
+}
+
+
+/**** SHAREDS ****/
+/** TEXT OVER IMAGE EFFECT **/
+/** credit to https://www.w3schools.com/howto/howto_css_image_text.asp **/
+.text-over-image {
+    position: relative;
+    text-align: center;
+}
+
+.text-over-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/** TEXTBLOCKS **/
+.textblock {
+    border-radius: 3vmin;
+    width: 80%;
+    color: white;
+    margin: 2vh auto 2vh auto;
+    padding: 40px;
+    background: rgb(0,0,0); /* Gradient tool re-used throughout CSS files: https://cssgradient.io/ */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(85,85,85,1) 100%);
+}
+
+.textblock img {
+    border-radius: 3vmin;
+    object-fit: fill;
+}
+
+.textblock h1, p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+.textblock a {
+    text-decoration: none;
+    color: #ccccff;
+}
+
+
+/** WIDEBAR **/
+.widebar {
+    display: block;
+    background-color: #5f7488;
+    width: auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.widebar h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.widebar a {
+    text-decoration: none;
+    /* Gradient text from https://cssgradient.io/blog/css-gradient-text/ */
+    background: -webkit-linear-gradient(0deg, rgb(188, 234, 255), rgb(98, 166, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

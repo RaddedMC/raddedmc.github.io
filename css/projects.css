@@ -1,0 +1,25 @@
+/* 
+- James N // Radded's Portfolio site -->
+- projects.css
+- Styling for the projects page of my portfolio!
+*/
+
+
+/** HEADER TITLE BUTTON COLOUR CHANGE **/
+#nav-links-container .active {
+    background-color: #970ce8;
+}
+
+
+/** PROJECTS TITLE WIDEBAR **/
+#projects-title {
+    background: linear-gradient(90deg, rgba(135,135,255,1) 0%, rgb(220, 135, 135) 100%);
+}
+
+#projects-title h1 {
+    font-size: 8vmin;
+}
+
+.project img {
+    width: 100%;
+}
