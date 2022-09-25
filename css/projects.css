@@ -20,6 +20,32 @@
     font-size: 8vmin;
 }
 
+
+/** PROJECT template **/
+.project {
+    background: linear-gradient(0deg, rgba(212, 212, 255, 0.5) 0%, rgba(255, 208, 208, 0.5) 100%);
+    border-radius: 5vmin;
+}
+
 .project img {
     width: 100%;
+    border-radius: 5vmin;
+}
+
+.project h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vmin;
+}
+
+.project h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 7vmin;
+    margin: 5vmin;
+}
+
+iframe {
+    margin-top: 10px;
+    border-radius: 5vmin;
 }
