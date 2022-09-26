@@ -80,4 +80,19 @@ iframe {
     iframe, .project img {
         border-radius: 20px;
     }
+
+    .wide-project {
+        width: 700px;
+        background: linear-gradient(180deg, rgba(212, 212, 255, 0.7) 0%, rgba(255, 208, 208, 0.7) 100%);
+    }
+
+    .project-large-photo, .project-youtube-embeds-small {
+        width: 40%;
+        display: inline-block;
+    }
+
+    .project-youtube-embeds-small iframe {
+        height: 150px;
+        margin-left: 10px;
+    }
 }
