@@ -32,6 +32,7 @@ img {
     background: #5865f2;
     position: relative;
     height: 60vmin;
+    width: 72%;
 }
 
 #discord-logo {
@@ -86,4 +87,51 @@ img {
     margin: auto;
     margin-bottom: 5vmin;
     border-radius: 20px;
+}
+
+
+/** DESKTOP OPTIMIZATION **/
+@media only screen and (min-width: 480px) {
+    /** MAX-SIZES **/
+    .discord-container {
+        width: 360px;
+        height: 300px;
+    }
+
+    .discord-container p {
+        font-size: 48px;
+    }
+
+    #site-body h1 {
+        font-size: 24px;
+    }
+
+    #discord-logo {
+        width: 100px;
+        height: auto;
+    }
+
+    #discord-pfp, #discord-pfp-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    #discord-online-dot {
+        width: 48px;
+        height: 48px;
+    }
+
+    iframe {
+        width: 440px;
+    }
+}
+
+
+@media only screen and (min-width: 968px) {
+    /** ENABLE CARD VIEW **/
+    .item-container {
+        margin: 1%;
+        display: inline-block;
+        vertical-align: top;
+    }
 }

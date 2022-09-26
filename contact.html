@@ -8,6 +8,7 @@
 <html>
 
     <head>
+        <meta name="viewport" content="width=device-width"> <!-- fix for Chrome DevTools from https://stackoverflow.com/questions/26888751/chrome-device-mode-emulation-media-queries-not-working -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/contact.css">
         <title>James N // Radded's portfolio</title>
@@ -32,20 +33,26 @@
         </header>
 
         <div id="site-body">
-            <h1>The best place to reach me is Discord.</h1>
-            <a href="https://discordapp.com/users/344946119937097730">
-                <div class="textblock discord-container">
-                    <img id="discord-logo" src="img/social-icons/discord.jpg">
-                    <div id="discord-pfp-container">
-                        <img id="discord-pfp" src="img/social-icons/radded-discord.png">
-                        <div id="discord-online-dot"></div>
-                    </div>
-                    <p>Radded#4791</p>
+            <div class="float-container">
+                <div class="item-container">
+                    <h1>The best place to reach me is Discord.</h1>
+                    <a href="https://discordapp.com/users/344946119937097730">
+                        <div class="textblock discord-container">
+                            <img id="discord-logo" src="img/social-icons/discord.jpg">
+                            <div id="discord-pfp-container">
+                                <img id="discord-pfp" src="img/social-icons/radded-discord.png">
+                                <div id="discord-online-dot"></div>
+                            </div>
+                            <p>Radded#4791</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
 
-            <h1>Or join my Discord server:</h1>
-            <iframe class="discord-embed" src="https://discord.com/widget?id=713551770386956359&theme=dark" width="90%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <div class="item-container">
+                    <h1>Or join my Discord server:</h1>
+                    <iframe class="discord-embed" src="https://discord.com/widget?id=713551770386956359&theme=dark" width="90%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            </div>
         </div>
 
         <footer>

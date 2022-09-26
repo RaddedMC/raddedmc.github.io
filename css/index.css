@@ -73,6 +73,7 @@
 .wordart {
     background: linear-gradient(180deg, rgba(135,135,255,1) 0%, rgba(135,220,200,1) 100%);
     padding: 10px;
+    text-align: center;
 }
 
 .wordart-word {
@@ -87,4 +88,35 @@
     /* from https://www.w3schools.com/cssref/css3_pr_text-justify.asp */
     text-align: justify;
     text-justify: inter-ideograph;
+}
+
+
+/** DESKTOP OPTIMIZATION **/
+@media only screen and (min-width: 768px) {
+    /** CARD VIEW TUNEUPS **/
+    #hero-intro-img h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #other-things {
+        text-align: left;
+    }
+
+    .wordart-word {
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    #skills-wordart {
+        max-width: 340px;
+    }
+}
+
+
+@media only screen and (min-width: 1040px) {
+    /** STOP DYNAMIC RESIZE**/
+    .textblock  {
+        width: 436px;
+    }
 }

@@ -8,6 +8,7 @@
 <html>
 
     <head>
+        <meta name="viewport" content="width=device-width"> <!-- fix for Chrome DevTools from https://stackoverflow.com/questions/26888751/chrome-device-mode-emulation-media-queries-not-working -->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css">
         <title>James N // Radded's portfolio</title>
@@ -38,86 +39,90 @@
                 <a href="projects.html#workstation-project">Project: WorkStation 3</a>
             </div>
 
-            <div class="text-over-image textblock" id="hero-intro-img">
-                <img src="img/radded-iotproblems.png" width="100%">
-                <h1>My name is James,</h1>
-            </div>
+            <div class="float-container">
+                <div class="text-over-image textblock" id="hero-intro-img">
+                    <img src="img/radded-iotproblems.png" width="100%">
+                    <h1>My name is James,</h1>
+                </div>
 
-            <div class="textblock" id="hero-intro-textblock">
-                <h1>But I'm known as <b>Radded</b> (formerly RaddedMC) online.</h1><br>
-                <p>I'm a Software Engineering student at <a href="https://eng.uwo.ca">Western University</a> who is also a complete techie turbonerd.</p><br>
-                <p>I do all sorts of insane things and calls them 'projects':</p>
-                <ul>
-                    <li>
-                        <p>From <a href="https://www.youtube.com/watch?v=cYY04vteaEA">Attempting to cold-call my entire city</a>,</p>
-                    </li>
-                    <li>
-                        <p>To making a <a href="https://www.youtube.com/watch?v=hvz_QYbc19s">"DIY" VR headset</a>,</p>
-                    </li>
-                    <li>
-                        <p>And <a href="projects.html">converting my student rental into a smart home</a>,</p>
-                    </li>
-                </ul>
-                <p>Suffice it to say that when I do anything tech-related, I go <b>all-out</b>.</p>
+                <div class="textblock" id="hero-intro-textblock">
+                    <h1>But I'm known as <b>Radded</b> (formerly RaddedMC) online.</h1><br>
+                    <p>I'm a Software Engineering student at <a href="https://eng.uwo.ca">Western University</a> who is also a complete techie turbonerd.</p><br>
+                    <p>I do all sorts of insane things and calls them 'projects':</p>
+                    <ul>
+                        <li>
+                            <p>From <a href="https://www.youtube.com/watch?v=cYY04vteaEA">Attempting to cold-call my entire city</a>,</p>
+                        </li>
+                        <li>
+                            <p>To making a <a href="https://www.youtube.com/watch?v=hvz_QYbc19s">"DIY" VR headset</a>,</p>
+                        </li>
+                        <li>
+                            <p>And <a href="projects.html">converting my student rental into a smart home</a>,</p>
+                        </li>
+                    </ul>
+                    <p>Suffice it to say that when I do anything tech-related, I go <b>all-out</b>.</p>
+                </div>
             </div>
 
             <div class="widebar" id="socials-textblock">
                 <h1>Many of my projects are <a href="https://github.com/RaddedMC">here on GitHub</a> as well as on <a href="https://www.youtube.com/c/RaddedMC">YouTube</a>!</h1>
             </div>
 
-            <div class="wordart textblock" id="skills-wordart">
-                <p class="wordart-word">PYTHON</p>
-                <p class="wordart-word">HTML</p>
-                <p class="wordart-word">CSS</p>
-                <p class="wordart-word">JAVASCRIPT</p>
-                <p class="wordart-word">JAVA</p>
-                <p class="wordart-word">UNITY</p>
-                <p class="wordart-word">PREMIERE</p>
-                <p class="wordart-word">PRO</p>
-                <p class="wordart-word">AFTER</p>
-                <p class="wordart-word">EFFECTS</p>
-                <p class="wordart-word">PHOTOSHOP</p>
-                <p class="wordart-word">C++</p>
-                <p class="wordart-word">LINUX</p>
-                <p class="wordart-word">ARDUINO</p>
-                <p class="wordart-word">HOME</p>
-                <p class="wordart-word">ASSISTANT</p>
-                <p class="wordart-word">BLENDER</p>
-                <p class="wordart-word">TRUENAS</p>
-                <p class="wordart-word">UNIFI</p>
-                <p class="wordart-word">ANDROID</p>
-                <p class="wordart-word">STUDIO</p>
-                <p class="wordart-word">O365</p>
-                <p class="wordart-word">TI</p>
-                <p class="wordart-word">BASIC</p>
-                <p class="wordart-word">NETWORKING</p>
-                <p class="wordart-word">ABLETON</p>
-                <p class="wordart-word">LIVE</p>
-                <p class="wordart-word">ESPHOME</p>
-                <p class="wordart-word">RASPBERRY</p>
-                <p class="wordart-word">PI</p>
-                <p class="wordart-word">YAML</p>
-                <p class="wordart-word">JINJA2</p>
-                <p class="wordart-word">AWS/GOOGLE</p>
-                <p class="wordart-word">CLOUD</p>
-                <p class="wordart-word">SOLDERING</p>
-                <p class="wordart-word">CIRCUITS</p>
-                <p class="wordart-word">MECHANICAL</p>
-                <p class="wordart-word">KEYBOARDS</p>
-                <p class="wordart-word">PC</p>
-                <p class="wordart-word">BUILDING</p>
-            </div>
+            <div class="float-container">
+                <div class="wordart textblock" id="skills-wordart">
+                    <p class="wordart-word">PYTHON</p>
+                    <p class="wordart-word">HTML</p>
+                    <p class="wordart-word">CSS</p>
+                    <p class="wordart-word">JAVASCRIPT</p>
+                    <p class="wordart-word">JAVA</p>
+                    <p class="wordart-word">UNITY</p>
+                    <p class="wordart-word">PREMIERE</p>
+                    <p class="wordart-word">PRO</p>
+                    <p class="wordart-word">AFTER</p>
+                    <p class="wordart-word">EFFECTS</p>
+                    <p class="wordart-word">PHOTOSHOP</p>
+                    <p class="wordart-word">C++</p>
+                    <p class="wordart-word">LINUX</p>
+                    <p class="wordart-word">ARDUINO</p>
+                    <p class="wordart-word">HOME</p>
+                    <p class="wordart-word">ASSISTANT</p>
+                    <p class="wordart-word">BLENDER</p>
+                    <p class="wordart-word">TRUENAS</p>
+                    <p class="wordart-word">UNIFI</p>
+                    <p class="wordart-word">ANDROID</p>
+                    <p class="wordart-word">STUDIO</p>
+                    <p class="wordart-word">O365</p>
+                    <p class="wordart-word">TI</p>
+                    <p class="wordart-word">BASIC</p>
+                    <p class="wordart-word">NETWORKING</p>
+                    <p class="wordart-word">ABLETON</p>
+                    <p class="wordart-word">LIVE</p>
+                    <p class="wordart-word">ESPHOME</p>
+                    <p class="wordart-word">RASPBERRY</p>
+                    <p class="wordart-word">PI</p>
+                    <p class="wordart-word">YAML</p>
+                    <p class="wordart-word">JINJA2</p>
+                    <p class="wordart-word">AWS/GOOGLE</p>
+                    <p class="wordart-word">CLOUD</p>
+                    <p class="wordart-word">SOLDERING</p>
+                    <p class="wordart-word">CIRCUITS</p>
+                    <p class="wordart-word">MECHANICAL</p>
+                    <p class="wordart-word">KEYBOARDS</p>
+                    <p class="wordart-word">PC</p>
+                    <p class="wordart-word">BUILDING</p>
+                </div>
 
-            <div class="textblock" id="other-things">
-                <h1>Other things I do:</h1>
-                <ul>
-                    <li><p><a href="https://youtu.be/w1pNVnDdnZM?t=220">Make silly videos</a></p></li>
-                    <li><p>Play Celeste and Splatoon 3</p></li>
-                    <li><p><a href="https://www.youtube.com/watch?v=Mpv0dNtlNzU">Livestream</a></p></li>
-                    <li><p><a href="https://youtu.be/73Q3CIc5GQs">Enjoy Among Us memes</a></p></li>
-                    <li><p>Learning how to skateboard! <a href="https://youtu.be/w1pNVnDdnZM?t=300">Sort of...</a></p></li>
-                    <li><p><a href="https://open.spotify.com/playlist/0TvymMwSYHeUSzd980ell1?si=503587cacc7f4cc2">Listen to EDM!</a></p></li>
-                </ul>
+                <div class="textblock" id="other-things">
+                    <h1>Other things I do:</h1>
+                    <ul>
+                        <li><p><a href="https://youtu.be/w1pNVnDdnZM?t=220">Make silly videos</a></p></li>
+                        <li><p>Play Celeste and Splatoon 3</p></li>
+                        <li><p><a href="https://www.youtube.com/watch?v=Mpv0dNtlNzU">Livestream</a></p></li>
+                        <li><p><a href="https://youtu.be/73Q3CIc5GQs">Enjoy Among Us memes</a></p></li>
+                        <li><p>Learning how to skateboard! <a href="https://youtu.be/w1pNVnDdnZM?t=300">Sort of...</a></p></li>
+                        <li><p><a href="https://open.spotify.com/playlist/0TvymMwSYHeUSzd980ell1?si=503587cacc7f4cc2">Listen to EDM!</a></p></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="widebar" id="goals-widebar">
