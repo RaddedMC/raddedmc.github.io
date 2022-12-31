@@ -13,6 +13,17 @@
         <link rel="stylesheet" href="css/projects.css">
         <link rel="icon" type="image/x-icon" href="img/radded-logo.png">
         <title>James N // Radded's portfolio</title>
+
+        <!-- For expanding photogrid items-->
+        <script>
+            // TODO: Make this work with more than one photogrid
+            function expand(imgClicked) {
+                let expandedImage = document.getElementById("photogrid-hoopnet-expand");
+                
+                expandedImage.src = imgClicked.src;
+                expandedImage.parentElement.style.display = "block";
+            }
+        </script>
     </head>
 
     <body style="margin: 0;">
@@ -72,6 +83,41 @@
 
                     <a href="https://github.com/RaddedMC/CategoryWalls"><h2 class="project-link">GET IT ON GITHUB</h2></a>
                     <p>See the coloured edges in the above photos? CategoryWalls is an absolute lifesaver for me when I only have one screen to work with. Windows 11 has a bug/feature where in the Task Switcher, the corner of your wallpaper is visible even when windows are maximized. CategoryWalls exploits this feature by adding a coloured stripe to the corner of your wallpaper. I use this to "categorize" groups of desktops: If I have windows for multiple university classes open, I can have three or four say 'calculus' desktops that are blue, and a couple 'data structures' desktops that are green. See some examples of what I mean on the GitHub repo for this project.</p>
+                </div>
+
+                <div id="hoopnet-project" class="textblock project wide-project">
+                    <h1 class="project-title">HoopNet: A smart climate control system for a hoop house farm!</h1>
+                
+                    <!-- Help from https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+                    <p>Click to expand images</p>
+
+                    <div class="photogrid-container">
+                        <span onclick="this.parentElement.style.display='none'" class="photogrid-closebtn">&times;</span>
+
+                        <img id="photogrid-hoopnet-expand" style="width:100%">
+                    </div>
+
+                    <div class="photogrid">
+                        <div class="photogrid-item">
+                            <img src="https://raw.githubusercontent.com/RaddedMC/HoopNet/main/demo/HoopOverview.png" onclick="expand(this);">
+                        </div>
+                        <div class="photogrid-item">
+                            <img src="https://raw.githubusercontent.com/RaddedMC/HoopNet/main/demo/HoopHouse.jpg" onclick="expand(this);">
+                        </div>
+                        <div class="photogrid-item">
+                            <img src="https://raw.githubusercontent.com/RaddedMC/HoopNet/main/demo/HoopGif.gif" onclick="expand(this);" style="background-size: cover; height: 100px;">
+                        </div>
+                        <div class="photogrid-item">
+                            <img src="https://raw.githubusercontent.com/RaddedMC/HoopNet/main/demo/HoopTeam.jpg" onclick="expand(this);">
+                        </div>
+                        <div class="photogrid-item">
+                            <img src="https://raw.githubusercontent.com/RaddedMC/HoopNet/main/demo/Urban Roots.jpg" onclick="expand(this);">
+                        </div>
+
+                    </div>
+
+                    <a href="https://github.com/RaddedMC/HoopNet"><h2 class="project-link">SEE IT ON GITHUB</h2></a>
+                    <p>As my ES1050 project at Western University, my teammates and I were tasked to build a climate control system for Urban Roots London's Hoop house farm! Hoop houses are greenhouses whose plastic side walls can raise up slightly, allowing moisture and humidity to vent out. We designed a versatile and modular internet-connected control system that mechanically raised and lowered these plastic sides, based on user-configurable temperature and humidity parameters. The intention was to design a scalable network system similar to <a href="https://www.home-assistant.io/">Home Assistant</a> where each hoop house's controls (lift-sides and a smart plug for a fan) was connected to a low cost Raspberry Pi-based Control Unit. A central server placed on-site would connect to the Control Units. (one per hoop house) with WiFi -- likely using some form of high-gain AP like a <a href="https://store.ui.com/collections/unifi-network-wireless/products/u6-lr-us">U6-LR</a> -- and collecting data from the houses. The hope was to then provide remote control and access to save Urban Roots from actually sending someone out to the farm if it was too humid inside one of the houses. We found that this project was too ambitious to complete in one semester, and focused on completing the Control Unit which is pictured above. This project was a big inspiration for me to deep-dive into IoT as detailed in my Smart Home project above.</p>
                 </div>
 
                 <div id="radiant-project" class="textblock project">

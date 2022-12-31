@@ -96,3 +96,48 @@ iframe {
         margin-left: 10px;
     }
 }
+
+/* For the photogrid */
+.photogrid {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.photogrid-item {
+    width: 150px;
+    padding: 0 10px 0 10px;
+    display: inline-block;
+}
+
+.photogrid-item img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.photogrid-item img:hover {
+    opacity: 1;
+}
+
+.photogrid-container {
+    position: relative;
+    display: none;
+}
+
+.photogrid-closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background-color: #00000088;
+    font-size: 35px;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.photogrid-closebtn:hover {
+    transition: 0.25s;
+    background-color: #ff000088;
+}
